@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto:wght@100;400&display=swap');
+
+* {
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #b6b6b67a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*        Estilo do Menu de navegação            */
+
+.logo img {
+    height: 75px;
+} 
+
+a {
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+ul a {
+    margin: 10px;
+} 
+
+nav {
+    background-color: whitesmoke;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    top: 0;
+    box-shadow: 5px 8px 8px #888888;
+}
+
+h1,
+p {
+    color: #010101;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+nav,
+ul {
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+}
+
+li {
+    padding: 0 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+#button-menu {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+a:hover,
+h1:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(86, 86, 86, 0.2);
+}
+
+.content {
+    background-color: #353434;
+    width: 100%;
+    height: 100vh;
+}
+
+#login {
+    border-radius: 20px;
+    border: #00ccff solid;
+}
+
+#login:hover {
+    background-color: #00ccff;
+}
+
+@media (max-width: 700px) {
+    nav,
+    ul {
+        flex-direction: column;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    nav {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    h1 {
+        margin: 10px;
+    }
+
+    button {
+        display: flex;
+    }
+
+    li,
+    ul {
+        width: 100%;
+    }
+
+    ul.responsivo {
+        height: 260px;
+    }
+}
+
+
+/*        Estilo da barra de pesquisa           */
+
+.container{
+	position: absolute;
+	left: 63%;
+    top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+}
+
+input{
+	outline: none;
+	box-sizing: border-box;
+	height: 40px;
+	width: 0px;
+	padding: 0 20px;
+	color: black;
+	border-radius: 50px;
+	font-size: 20px;
+	border: 2px solid #00ccff;
+	transition: all .7s ease; 
+}
+
+::placeholder{
+	color: rgb(63, 62, 62);
+}
+
+.btn{
+	position: absolute;
+	right: 0px;
+    top: 0px;
+	width: 60px;
+	height: 60px;
+	background: #00ccff;
+	line-height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn i{
+	font-size: 25px;
+	color: white;
+	line-height: 60px;
+	transition: all .7s ease;
+}
+
+.container:hover input{
+	width: 350px;
+}
+
+
+.btn:hover{
+	background: #00ccff;
+}
+
+
+/*        Estilo do Login            */
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 400px;
+    display: inline-flex;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.8);
+}
+
+.main .left{
+    width: 250px;
+    height: 400px;
+    background: url(img/undraw_fingerprint_login_re_t71l.svg) center;
+    background-size: 340px 400px;
+    box-sizing: border-box;
+    border-radius: 15px 0 0 15px;
+}
+
+.main .right{
+    width: 350px;
+    height: 400px;
+    background: white;
+    border-radius: 0 15px 15px 0;
+}
+
+.main .right .form{
+    margin: 20px;
+    margin-left: 30px;
+}
+
+.main .right .form input{
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    padding: 2px;
+    outline: none;
+}
+
+.main .right .form button{
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    background: #00ccff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.main .right .form p{
+    margin: 20px;
+    font-weight: bold;
+    color: #3D3D3D;
+}
+
+.main .right .form a{
+    color: #00ccff;
+    text-decoration: none;
+}
+
+.ph::placeholder {
+    font-size: 15px;
+    padding-left: 15px;
+}

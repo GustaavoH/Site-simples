@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto:wght@100;400&display=swap');
+
+* {
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #b6b6b67a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Menu de navegação */
+
+.logo img {
+    height: 75px;
+} 
+
+a {
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+ul a {
+    margin: 10px;
+} 
+
+nav {
+    background-color: whitesmoke;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    top: 0;
+    box-shadow: 5px 8px 8px #888888;
+}
+
+h1,
+p {
+    color: #010101;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav,
+ul {
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+}
+
+li {
+    padding: 0 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+#button-menu {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+a:hover,
+h1:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(86, 86, 86, 0.2);
+}
+
+.content {
+    background-color: #353434;
+    width: 100%;
+    height: 100vh;
+}
+
+#login {
+    border-radius: 20px;
+    border: #00ccff solid;
+}
+
+#login:hover {
+    background-color: #00ccff;
+}
+
+@media (max-width: 700px) {
+    nav,
+    ul {
+        flex-direction: column;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    nav {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    h1 {
+        margin: 10px;
+    }
+
+    button {
+        display: flex;
+    }
+
+    li,
+    ul {
+        width: 100%;
+    }
+
+    ul.responsivo {
+        height: 260px;
+    }
+}
+
+
+/*        Estilo da barra de pesquisa           */
+
+.container{
+	position: absolute;
+	left: 63%;
+    top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+}
+
+input{
+	outline: none;
+	box-sizing: border-box;
+	height: 40px;
+	width: 0px;
+	padding: 0 20px;
+	color: black;
+	border-radius: 50px;
+	font-size: 20px;
+	border: 2px solid #00ccff;
+	transition: all .7s ease; 
+}
+
+::placeholder{
+	color: rgb(63, 62, 62);
+}
+
+.btn{
+	position: absolute;
+	right: 0px;
+    top: 0px;
+	width: 60px;
+	height: 60px;
+	background: #00ccff;
+	line-height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn i{
+	font-size: 25px;
+	color: white;
+	line-height: 60px;
+	transition: all .7s ease;
+}
+
+.container:hover input{
+	width: 350px;
+}
+
+
+.btn:hover{
+	background: #00ccff;
+}
+
+
+/*         Cadastro     */
+
+.w50{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+.box{
+    display: flex;
+    width: 930px;
+}
+.img-box{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px  0 0 20px;
+}
+.img-box img{
+    width: 100%;
+}
+.form-box{
+    background-color: rgba(255, 255, 255);
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+}
+.form-box h2{
+    font-size: 30px;
+}
+.form-box p{
+    font-weight: bold;
+    color: #3D3D3D;
+}
+.form-box p a{
+    color: #00ccff;
+    text-decoration: none;
+}
+.form-box form{
+    margin: 20px 0;
+}
+form .input-group{
+    margin-bottom: 15px;
+}
+form .input-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+form .input-group input{
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+    border: 2px solid #00ccff;
+}
+
+form .input-group button{
+    width: 100%;
+    height: 47px;
+    background: #00ccff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+@media (max-width:930px) {
+    .img-box{
+        display: none;
+    }
+    .box{
+        width: 700px;
+    }
+    .form-box{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+@media (max-width:500px) {
+    .w50{
+        width: 100%;
+        padding: 0;
+    }
+}
