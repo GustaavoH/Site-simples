@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="a/css/teste.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="a/js/main.js" defer></script>
+    <title>Login</title>
 </head>
+
 <body>
+
+    <!--Menu de navegação-->
     
+    <nav>
+        <div class="logo">
+            <a href="pgprincipal.html"><img src="a/css/img/trades.jpg" alt=""></a>
+        </div>
+
+        <div class="container">
+            <input type="text" placeholder="Pesquisar">
+            <div class="btn">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+
+        <ul id="botoesMenu">
+            <a href="#">
+                <li>
+                    <p><i class="fa-sharp fa-solid fa-store"></i></p>
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <p><i class="fa-solid fa-handshake"></i></p>
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <p><i class="fa-solid fa-comments-dollar"></i></p>
+                </li>
+            </a>
+            <a id="login" href="index.html">
+                <li>
+                    <p>Entrar</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
+
+
+    <!-- Login -->
+
+    <div class="main">
+
+        <div class="left">
+        </div>
+
+        <div class="right">
+            <div class="form">
+                <h1>Login</h1><br>
+            <form id="form">
+                <label>Email:</label></br>
+                <input class="ph" id="email" type="email" name="email" placeholder="Digite seu email"><br>
+                
+                <label>Senha:</label></br>
+                <input class="ph" id="password" type="password" name="senha" placeholder="Digite sua senha"><br>
+                
+                <a href="pgprincipal.html"><button>Login</button></a>
+                
+                <p>Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+            </form>
+            </div>
+        </div>
+</div>
+
 </body>
+
 </html>
